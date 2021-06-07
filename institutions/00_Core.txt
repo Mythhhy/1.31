@@ -58,6 +58,18 @@ feudalism = {
 					culture = omani_culture
 					culture = yemeni_culture
 					culture = swahili
+					culture = shona
+					culture = songhai
+					culture = khazak
+					culture = siberian
+					culture = uzbehk
+					culture = kongolese
+					culture = mali
+					culture = senegambian
+					culture = mishary
+					culture = astrakhani
+					culture = oirats
+					culture = madagasque
 					area = ningguta_area
 					area = jilin_area
 					culture_group = byzantine
@@ -553,7 +565,7 @@ new_world_i = {
 				continent = europe
 				OR = {
 					owner = { has_idea = quest_for_the_new_world }
-					owner = { num_of_colonies = 1 }
+					owner = { colony = 1 }
 				}
 			}
 			AND = {
@@ -719,7 +731,7 @@ new_world_i = {
 					is_capital = yes
 				}
 				owner = {
-					num_of_colonies = 1
+					colony = 1
 					any_subject_country = {
 						is_colonial_nation = yes
 						OR = {
@@ -1693,7 +1705,6 @@ manufactories = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -1827,7 +1838,6 @@ manufactories = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -2124,7 +2134,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.2
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2184,7 +2194,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2216,7 +2226,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 2
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2247,7 +2257,7 @@ enlightenment = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			potential = {
 				enlightenment_origin = {
 					NOT = { same_continent = PREV }
@@ -2356,7 +2366,7 @@ industrialization = {
 	trade_company_efficiency = 2.0
 
 	bonus = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.15
 		global_tax_modifier = 0.15
 	}
 
@@ -2689,7 +2699,6 @@ industrialization = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
@@ -2823,7 +2832,6 @@ industrialization = {
 					trade_goods = ivory
 					trade_goods = slaves
 					trade_goods = spices
-					trade_goods = cloves
 					trade_goods = fur
 					trade_goods = incense
 				}
