@@ -9,10 +9,17 @@ edict_religion_enforced = {
 			has_country_flag = religion_enforced_edict
 		}
 		current_age = age_of_reformation
+		NOT = {
+			FROM = {
+				any_province_in_state  = {
+					has_province_modifier = PR_manpower_edict_province
+				}
+			}
+		}
 	}
 	
 	modifier = {
-		local_religious_conversion_resistance = 1.0
+		local_religious_conversion_resistance = 1
 	}
 	
 	color = {  116 198 240  }
