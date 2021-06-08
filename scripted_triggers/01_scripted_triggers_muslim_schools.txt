@@ -113,8 +113,6 @@ hidden_progressive_opinion_for_scholar_trigger = { #Used to pick best fit to inv
 		reverse_has_opinion = { who = FROM value = 25 }
 		reverse_has_opinion = { who = FROM value = 50 }
 		reverse_has_opinion = { who = FROM value = 75 }
-		reverse_has_opinion = { who = FROM value = 100 }
-		reverse_has_opinion = { who = FROM value = 125 }
 	}
 }
 

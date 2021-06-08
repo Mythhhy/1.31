@@ -115,12 +115,43 @@ can_move_capital = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = "MJL_OTHER_CN_REGION_CAPITAL"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			FROM = {
+				capital_scope = {
+					colonial_region = ROOT
+				}
+			}
+		}
+	}
 }
 
 can_move_trade_port = {
 }
 
 can_order_assault = {
+#	condition = {
+#		tooltip = "MJL_CANNOT_ASSAULT_WHILE_CN"
+#		potential = {
+#			FROM = {
+#				is_colonial_nation = yes
+#			}
+#		}
+#		allow = {
+#			OR = {
+#				continent = north_america
+#				continent = south_america
+#				region = australia_region
+#				region = oceanea_region
+#			}
+#		}
+#	}
 }
 
 can_order_force_march = {
@@ -139,6 +170,61 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	condition = {
+		tooltip = "MJL_CANT_COLONIZE_OTHER_CN_REGION"
+		potential = {
+			FROM = {
+				is_colonial_nation = yes
+			}
+		}
+		allow = {
+			OR = {
+				FROM = {
+					capital_scope = {
+						colonial_region = ROOT
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "MJL_CANT_COLONIZE_WITH_AFRICA_GOV"
+		potential = {
+			FROM = {
+				has_reform = african_colonists_reform
+				NOT = {
+					OR = {
+						has_idea = colonial_ventures
+						has_idea = additional_colonists
+					}
+				}
+			}
+		}
+		allow = {
+			AND = {
+				continent = africa
+				is_island = no
+			}
+		}
+	}
+	condition = {
+		tooltip = "MJL_AI_CANT_COLONIZE_WITH_AFRICA_GOV"
+		potential = {
+			FROM = {
+				ai = yes
+				has_reform = african_colonists_reform
+				NOT = {
+					OR = {
+						has_idea_group = expansion_ideas
+						has_idea_group = exploration_ideas
+					}
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
