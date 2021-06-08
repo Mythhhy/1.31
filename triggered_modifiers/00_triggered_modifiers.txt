@@ -3,7 +3,6 @@
 #
 # Effects are fully scriptable here.
 
-
 ###########################################
 # Discovery of the East Indian trade route.
 ###########################################
@@ -293,42 +292,44 @@ custodian_of_the_two_holy_mosques = {
 ######################################
 # Catholic control of Rome.
 ######################################
-catholic_rome = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
-	}
+#catholic_rome = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		has_discovered = 118	# Roma
+#		religion = catholic
+#		NOT = { tag = PAP }
+#	}
+#
+#	trigger = {	
+#		NOT = { overlord_of = PAP }
+#		owns_or_vassal_of = 118 # Roma		
+#		NOT = { tag = ITA }
+#		NOT = { tag = ROM }
+#		ai = yes
+#	}
+#
+#	papal_influence = -10
+#	diplomatic_reputation = -1
+#	#icon = 9
+#}
 
-	trigger = {	
-		NOT = { overlord_of = PAP }
-		owns_or_vassal_of = 118 # Roma		
-		NOT = { tag = ITA }
-		NOT = { tag = ROM }
-	}
-
-	papal_influence = -10
-	diplomatic_reputation = -1
-	#icon = 9
-}
-
-papal_subjugation = {
-	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
-	}
-
-	trigger = {	
-		overlord_of = PAP
-		NOT = { tag = ITA }
-	}
-
-	diplomatic_reputation = -2
-	#icon = 9
-}
+#papal_subjugation = {
+#	potential = {
+#		normal_or_historical_nations = yes
+#		has_discovered = 118	# Roma
+#		religion = catholic
+#		NOT = { tag = PAP }
+#	}
+#
+#	trigger = {	
+#		overlord_of = PAP
+#		NOT = { tag = ITA }
+#		ai = yes
+#	}
+#
+#	diplomatic_reputation = -2
+#	#icon = 9
+#}
 
 
 rapid_collapse_of_society = {
@@ -400,11 +401,8 @@ counter_revolution = {
 		is_revolutionary = no
 		any_country = {
 			is_revolution_target = yes
-			OR = {
-				capital_scope = {
-					continent = ROOT
-				}
-				is_neighbor_of = ROOT
+			capital_scope = {
+				continent = ROOT
 			}
 		}
 	}
@@ -843,8 +841,7 @@ italian_wars_triggered_modifier = {
 			}
 		}
 	}
-	mercenary_cost = -0.10
-	mercenary_discipline = 0.05
+	amount_of_banners = 0.1
 }
 
 ######################################

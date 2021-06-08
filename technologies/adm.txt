@@ -74,7 +74,8 @@ technology = { #National Ideas
 technology = { #Workshop
 	# Tech 6
 	year = 1479
-	
+
+	governing_capacity = 50	
 	#Workshop
 	farm_estate = yes
 	workshop = yes
@@ -157,6 +158,7 @@ technology = { #Military Administration
 	
 	may_force_march = yes
 	soldier_households = yes
+	governing_capacity = 150
 }
 
 technology = { #Metallurgy
@@ -216,6 +218,7 @@ technology = { #The Constitution
 	# Tech 22
 	year = 1687
 	
+	governing_capacity = 250
 	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
